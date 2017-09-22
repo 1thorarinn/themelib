@@ -8,9 +8,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 
-if ( ! class_exists( 'Theme_Options' ) ) {
+if ( ! class_exists( 'ThemeOptions' ) ) {
 
-class Theme_Options {
+class ThemeOptions {
 
   /**
 		 * Start things up
@@ -128,7 +128,7 @@ class Theme_Options {
    * @since 1.0.0
    */
   public static function register_settings() {
-    register_setting( 'theme_options', 'theme_options', array( 'Theme_Options', 'sanitize' ) );
+    register_setting( 'theme_options', 'theme_options', array( 'ThemeOptions', 'sanitize' ) );
   }
 
   /**
