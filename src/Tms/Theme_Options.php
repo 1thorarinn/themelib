@@ -165,26 +165,7 @@ class Theme_Options {
 
 }
 
-new Theme_Options;
 
-
-// Helper function to use in your theme to return a theme option value
-function myprefix_get_theme_option( $id = '' ) {
-	return Theme_Options::get_theme_option( $id );
-}
-
-
-
-add_action('wp_head', 'wpb_add_googleanalytics');
-function wpb_add_googleanalytics() {
-	if( !is_admin() ):
-		// til að koma í veg fyrir að pagespeed insights fái scriptuna serveraða til sín
-		//if (!isset($_SERVER['HTTP_USER_AGENT']) || stripos($_SERVER['HTTP_USER_AGENT'], 'Speed Insights') === false):
-			// your analytics code here
-  		echo '<script>' . myprefix_get_theme_option('input_example') . '</script>';
-	//	endif;
-	endif;
-}
 
 
 
