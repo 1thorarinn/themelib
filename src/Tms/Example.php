@@ -1,7 +1,7 @@
 <?php
 
 
-namespace tools\Tms;
+namespace Tms;
 
 
 
