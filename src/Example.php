@@ -9,7 +9,7 @@ class Example
 {
     public function sayHello()
     {
-        return 'Hallo!';
+        return 'Hello!';
     }
 
     public function sayGoodbye(){
