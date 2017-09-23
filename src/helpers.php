@@ -84,31 +84,24 @@
 
 
 
- new Tms\ThemeOptions();
-
-
- // Helper function to use in your theme to return a theme option value
- function myprefix_get_theme_option1( $id = '' ) {
- 	return Tms\ThemeOptions::get_theme_option( $id );
- }
 
 
 
- add_action('wp_head', 'wpb_add_googleanalytics1');
- function wpb_add_googleanalytics1() {
- 	if( !is_admin() ):
- 		// til að koma í veg fyrir að pagespeed insights fái scriptuna serveraða til sín
- 		//if (!isset($_SERVER['HTTP_USER_AGENT']) || stripos($_SERVER['HTTP_USER_AGENT'], 'Speed Insights') === false):
- 			// your analytics code here
-   		echo '<script>' . myprefix_get_theme_option1('input_example') . '</script>';
 
 
- 	//	endif;
- 	endif;
- }
 
 
- // An alias to the class
- function my_excerpt1($length = 55) {
-   Tms\Excerpt::length($length);
+
+ add_theme_support( 'post-thumbnails' );
+ add_image_size( 'medium-large', 450, 450, false );
+ add_image_size( 'medium-larger', 600, 600, false );
+ add_image_size( 'larger', 1300, 430, true );
+ // Register the three useful image sizes for use in Add Media modal
+ add_filter( 'image_size_names_choose', 'wpshout_custom_sizes' );
+ function wpshout_custom_sizes( $sizes ) {
+     return array_merge( $sizes, array(
+         'medium-large' => __( 'Medium Large' ),
+         'medium-larger' => __( 'Medium Larger' ),
+         'larger' => __( 'Larger' )
+     ) );
  }
