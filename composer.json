@@ -8,7 +8,7 @@
         "psr-0" : {
             "Tms" : "src"
         },
-    
-        "files": ["src/helpers.php"]
+
+        "files": ["src/helpers.php", "src/ajax-handler-wp.php"]
     }
 }
