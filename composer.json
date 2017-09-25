@@ -9,6 +9,6 @@
             "Tms" : "src"
         },
 
-        "files": ["src/helpers.php", "src/ajax-handler-wp.php"]
+        "files": ["src/helpers.php"]
     }
 }
