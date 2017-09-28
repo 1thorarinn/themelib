@@ -1,5 +1,5 @@
 <?php
-
+use Tms\ThemeOptions;
 /*
  This file needs to be required manually
  */
@@ -7,12 +7,12 @@
 
 
 
-  new Tms\ThemeOptions();
+  new ThemeOptions();
 
 
   // Helper function to use in your theme to return a theme option value
   function myprefix_get_theme_option1( $id = '' ) {
-  	return Tms\ThemeOptions::get_theme_option( $id );
+  	return ThemeOptions::get_theme_option( $id );
   }
 
 

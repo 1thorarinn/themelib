@@ -18,3 +18,7 @@ Skipta yfir í psr-4
 
 // ? TODO
 Skoða submodules
+
+
+
+// ? version-check í rótina á src?
