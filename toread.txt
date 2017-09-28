@@ -1,0 +1,5 @@
+
+
+
+https://devzone.zend.com/200/writing-libraries-in-php/
+https://www.sitepoint.com/starting-new-php-package-right-way/

@@ -1,0 +1,20 @@
+
+
+
+
+
+// TODO
+Virkni sem að tékkar hvort að ajax-handler-wp.php sé available ef ekki þá er default admin_url('admin-ajax.php');
+
+
+
+// TODO
+Sennilega færa virkni yfir úr functions yfir í oop og gera modular sem hægt er, implementation kóði
+verður þá styttri og auðveldari að eiga við. Hooks og filterar enda þá í objectinu sjálfu
+
+
+// ? TODO
+Skipta yfir í psr-4
+
+// ? TODO
+Skoða submodules

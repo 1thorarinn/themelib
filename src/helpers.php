@@ -5,7 +5,13 @@
  *
  */
 
+/*
 
+"psr-0" : {
+    "Tms" : "src"
+},
+
+*/
 
 
  function tms_get_browser_info()
