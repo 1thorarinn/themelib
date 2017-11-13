@@ -35,3 +35,8 @@ use Tms\ThemeOptions;
   function my_excerpt1($length = 55) {
     Tms\Excerpt::length($length);
   }
+
+
+
+// psr-0 
+// https://stackoverflow.com/questions/18146057/composer-autoloader-psr-0-namespaces

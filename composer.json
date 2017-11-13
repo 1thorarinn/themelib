@@ -9,7 +9,6 @@
            "Tms" : "src"
         },
 
-
-        "files": ["src/helpers.php"]
+        "files": ["src/helpers.php", "src/Tms/Posts/posts-functions.php"]
     }
 }
